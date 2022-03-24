@@ -8,18 +8,41 @@
         #navbar {
           margin: 10px;
           padding: 0;
-          background-color: aqua;
+          background-color: white;
           font-family: cursive;
         }
         #navbar li{
           display:flex;
-          width: 155px;
+          width: 150px;
           float: left;
           margin-left: 5px;
           border: 1px rgb(79, 184, 219);
           border-width: thick;
-          background-color: aqua;
+          background-color: white;
         }
+        #navbar a:hover {
+          background-color: lightblue;
+        }
+        body{
+        background-image: url(images/background.jpg);
+        background-repeat: repeat-y;
+        background-size: 100%;
+      }
+      table{
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+      }
+      table,
+      td,
+      th {
+        border: 3px solid;
+        border-color: lightpink;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        text-align: center;
+      }
       </style>
     </head>
     <body>
@@ -35,6 +58,46 @@
             <li><a href="sitemap.html">Site Map</a></li>
           </ul>
         </nav>
-  
+        <br>
+        <table>
+          <caption>Local Sports</caption>
+          <tr>
+            <th>Sport</th>
+            <th>Team Name</th>
+            <th>Season</th>
+            <th>Photo</th>
+          </tr>
+          <tr>
+            <td>Basketball</td>
+            <td>
+            <a href="https://www.google.com/search?client=firefox-b-1-d&q=celtics+schedule#sie=t;/m/0bwjj;3;/m/05jvx;mt;fp;1;;">
+            Celtics</a></td>
+            <td>Winter/Spring</td>
+            <td><img src="images/celtics.svg" alt="celtics" title="celtics" width="100"></td>
+          </tr>
+          <tr>
+            <td>Football</td>
+            <td>
+              <a href="https://www.patriots.com/schedule/">Patriots</a></td>
+            <td>Fall/Winter</td>
+            <td><img src="images/patriots.svg" alt="patriots" title="patriots" width="100"></td>
+          </tr>
+          <tr>
+            <td>Baseball</td>
+            <td>
+              <a href="https://www.mlb.com/redsox/schedule/2022-03">
+              RedSox</a></td>
+            <td>Spring/Summer</td>
+            <td><img src="images/redsox.png" alt="redsox" title="redsox" width="100"></td>
+          </tr>
+          <tr>
+            <td>Hockey</td>
+            <td>
+              <a href="https://www.google.com/search?client=firefox-b-1-d&q=bruins+schedule+#sie=t;/m/0j2zj;7;/m/05gwr;mt;fp;1;;">
+              Bruins</a></td>
+            <td>Fall/Winter</td>
+            <td><img src="images/1200px-Boston_Bruins.svg.png" alt="bruins" title="bruins" width="100"></td>
+          </tr>
+        </table>
       </body>
     </html>
