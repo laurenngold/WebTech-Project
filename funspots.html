@@ -5,44 +5,82 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Fun Spots</title>
     <style>
-        #navbar {
-          margin: 10px;
-          padding: 0;
-          background-color: white;
-          font-family: cursive;
-        }
-        #navbar li{
-          display:flex;
-          width: 150px;
-          float: left;
-          margin-left: 5px;
-          border: 1px rgb(79, 184, 219);
-          border-width: thick;
-          background-color: white;
-        }
-        #navbar a:hover {
-          background-color: lightblue;
-        }
-        body{
+      #navbar {
+        margin: 10px;
+        padding: 0;
+        background-color: white;
+        font-family: cursive;
+      }
+      #navbar li {
+        display: flex;
+        width: 150px;
+        float: left;
+        margin-left: 5px;
+        border: 1px rgb(79, 184, 219);
+        border-width: thick;
+        background-color: white;
+      }
+      #navbar a:hover {
+        background-color: lightblue;
+      }
+      body {
         background-image: url(images/background.jpg);
         background-repeat: repeat-y;
         background-size: 100%;
       }
-      </style>
-    </head>
-    <body>
-        <nav>
-          <ul id="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="restaurants.html">Restaurants</a></li>
-            <li><a href="funspots.html">Fun Spots</a></li>
-            <li><a href="localsports.html">Local Sports</a></li>
-            <li><a href="historicallandmarks.html">Historical Landmarks</a></li>
-            <li><a href="nightlife.html">Night Life </a></li>
-            <li><a href="contactpage.html">Contact Page</a></li>
-            <li><a href="sitemap.html">Site Map</a></li>
-          </ul>
-        </nav>
-  
-      </body>
-    </html>
+      table {
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+      }
+      table,
+      td,
+      th {
+        font-family: 'Courier New', Courier, monospace;
+        border: 3px solid;
+        border-color: lightpink;
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="restaurants.html">Restaurants</a></li>
+        <li><a href="funspots.html">Fun Spots</a></li>
+        <li><a href="localsports.html">Local Sports</a></li>
+        <li><a href="historicallandmarks.html">Historical Landmarks</a></li>
+        <li><a href="nightlife.html">Night Life </a></li>
+        <li><a href="contactpage.html">Contact Page</a></li>
+        <li><a href="sitemap.html">Site Map</a></li>
+      </ul>
+    </nav>
+    <br>
+    <table>
+      <caption>Fun Spots</caption>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Photo</th>
+      </tr>
+      <tr>
+        <td>Museum of Fine Arts</td>
+        <td>Boston</td>
+        <td><img src="images/mfa.jpg" alt="mfa" title="mfa" width="300"></td>
+      </tr>
+      <tr>
+        <td>Boston Commons</td>
+        <td>Boston</td>
+        <td><img src="images/commons.jpg" alt="commons" title="commons" width="300"></td>
+      </tr>
+      <tr>
+        <td>Aquarium</td>
+        <td>Boston</td>
+        <td><img src="images/aquarium.png" alt="aquarium" title="aquarium" width="300"></td>
+      </tr>
+    </table>
+  </body>
+</html>
