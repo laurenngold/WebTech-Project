@@ -9,7 +9,7 @@
       #navbar {
         margin: 10px;
         padding: 0;
-        background-color: white;
+        background-color: pink;
         font-family: cursive;
       }
       #navbar li {
@@ -19,7 +19,7 @@
         margin-left: 5px;
         border: 1px rgb(79, 184, 219);
         border-width: thick;
-        background-color: white;
+        background-color: pink;
       }
       #navbar a:hover {
         background-color: lightblue;
@@ -27,26 +27,28 @@
       h1 {
         font-family: "Courier New", Courier, monospace;
         font-size: x-large;
-        color: lightpink;
+        color: hotpink;
         text-decoration: underline;
         text-align: center;
       }
       p {
         font-family: "Courier New", Courier, monospace;
         font-size: large;
-        color: white;
+        color: hotpink;
         text-align: center;
       }
       body {
         background-image: url(images/background.jpg);
         background-repeat: repeat-y;
         background-size: 100%;
+        font-family: 'Fjalla One', sans-serif;
       }
       .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
+
     </style>
   </head>
   <body>
@@ -63,7 +65,10 @@
       </ul>
     </nav>
     <br />
-    <h1>Life in Boston</h1>
+    <h1>
+    Life in Boston
+    </h1>
+
     <p>
       Welcome to life in Boston, where you can find all the best places that
       Boston has to offer. Throughout our website you will find the best
@@ -87,5 +92,13 @@
       width="400"
       class="center"
     />
+    <p ondblclick="change()">Double click here for a surprise!</p>
+    <p id="change"></p>
+
+    <script>
+      function change() {
+        document.getElementById("change").innerHTML = "I really hope you enjoy my website!";
+      }
+    </script>
   </body>
 </html>

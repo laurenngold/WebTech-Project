@@ -19,7 +19,7 @@
         margin-left: 5px;
         border: 1px rgb(79, 184, 219);
         border-width: thick;
-        background-color: white;
+        background-color: pink;
       }
       #navbar a:hover {
         background-color: lightblue;
@@ -30,12 +30,12 @@
         font-family: cursive;
       }
       h2 {
-        color: white;
+        color: hotpink;
         font-size: large;
         font-family: "Courier New", Courier, monospace;
       }
       fieldset {
-        color: white;
+        color: hotpink;
         font-size: large;
         font-family: "Courier New", Courier, monospace;
       }
@@ -43,6 +43,21 @@
         background-image: url(images/background.jpg);
         background-repeat: repeat-y;
         background-size: 100%;
+      }
+      img {
+        box-sizing: border-box;
+      }
+      .zoom {
+        padding: 50px;
+       transition: transform .2s;
+       width: 200px;
+       height: 200px;
+       margin: 0 auto;
+      }
+      .zoom:hover{
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
       }
     </style>
   </head>
@@ -68,11 +83,12 @@
         Email: Lgold1@babson.edu<br />
         Phone Number: 305-450-0109<br />
         <img src="images/lauren.jpeg" alt="lauren" title="lauren" width="400" />
+        <div class="zoom"></div>
       </h2>
     </fieldset>
     <br />
     <fieldset>
-      <form>
+      <form name="form">
         <legend>Questionnaire:</legend>
         Last Name:
         <input type="last name" placeholder="Last Name" />
@@ -175,5 +191,15 @@
         </form>
       </form>
     </fieldset>
+    <script>
+      function validateForm() {
+        let x = document.forms["form"]
+        ["fname"].value;
+        if (x == "") {
+          alert ("Name must be filled out");
+          return false;
+        }
+      }
+    </script>
   </body>
 </html>
