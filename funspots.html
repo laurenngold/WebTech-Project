@@ -44,6 +44,11 @@
         color: hotpink;
         text-align: center;
       }
+      #border {
+        border: thick solid hotpink;
+        font-family: "Courier New", Courier, monospace;
+        color: hotpink;
+      }
     </style>
   </head>
   <body>
@@ -108,5 +113,16 @@
         </td>
       </tr>
     </table>
+    <div id="border">
+      Do you have any suggestions? Click on the contact page to let us know!
+    </div>
+    <button type="button" onclick="myFunction()">
+      Change the color of the border
+    </button>
+    <script>
+      function myFunction() {
+        document.getElementById("border").style.borderColor = "white";
+      }
+    </script>
   </body>
 </html>

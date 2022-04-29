@@ -12,7 +12,7 @@
       .mySlides {
         display: none;
       }
-      img{
+      img {
         vertical-align: middle;
       }
       h1 {
@@ -54,7 +54,8 @@
         position: relative;
         margin: auto;
       }
-      .prev, .next{
+      .prev,
+      .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
@@ -72,7 +73,8 @@
         right: 0;
         border-radius: 3px 0 0 3px;
       }
-      .prev:hover, .next:hover {
+      .prev:hover,
+      .next:hover {
         background-color: aquamarine;
       }
       .text {
@@ -101,17 +103,27 @@
         display: inline-block;
         transition: background-color 0.6s ease;
       }
-      .active, .dot: hover {
-        background-color: #717171
+      .active,.dot: hover {
+        background-color: #717171;
       }
-      .fade { animation-name: fade;
-      animation: duration 1.5s;}
-      @keyframes fade{
-        from{opacity: .4}
-        to{opacity:1}
+      .fade {
+        animation-name: fade;
+        animation: duration 1.5s;
       }
-      @media only screen and (max-width:300px) {
-        .prev, .next, .text {font-size: 11px;}
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px;
+        }
       }
     </style>
   </head>
@@ -130,73 +142,69 @@
     </nav>
     <br />
     <h1>This website is about all the best places Boston has to offer!</h1>
-     <li><a href="index.html">Home</a></li>
-      <li><a href="restaurants.html">Restaurants</a></li>
-      <li><a href="funspots.html">Fun Spots</a></li>
-      <li><a href="localsports.html">Local Sports</a></li>
-      <li><a href="historicallandmarks.html">Historical Landmarks</a></li>
-      <li><a href="nightlife.html">Night Life </a></li>
-      <li><a href="contactpage.html">Contact Page</a></li>
-      <li><a href="sitemap.html">Site Map</a></li>
-  
-  <div class ="slideshow-container">
-    <div class ="mySlides fade">
-      <div class="numbertext">1 / 3 </div>
-      <img src="images/boston.jpeg" style="width:100%;">
-      <div class="text">The city of Boston</div>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="restaurants.html">Restaurants</a></li>
+    <li><a href="funspots.html">Fun Spots</a></li>
+    <li><a href="localsports.html">Local Sports</a></li>
+    <li><a href="historicallandmarks.html">Historical Landmarks</a></li>
+    <li><a href="nightlife.html">Night Life </a></li>
+    <li><a href="contactpage.html">Contact Page</a></li>
+    <li><a href="sitemap.html">Site Map</a></li>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/boston.jpeg" style="width: 100%" />
+        <div class="text">The city of Boston</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/aquarium.png" style="width: 100%" />
+        <div class="text">Beautiful aquarium in the city</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/abeandlouis.jpg" style="width: 100%" />
+        <div class="text">Really good steak house!</div>
+      </div>
     </div>
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="images/aquarium.png" style="width: 100%">
-    <div class="text">Beautiful aquarium in the city</div>
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="images/abeandlouis.jpg" style="width: 100%;">
-    <div class="text">Really good steak house!</div>
-  </div>
-</div>
-  <br>
-  <div style="text-align:center">
-  <span class="dot"
-  onclick="currentSlide(1)"></span>
-  <span class="dot"
-  onclick="currentSlide(2)"></span>
-    <span class="dot"
-  onclick="currentSlide(3)"></span>
-  </div>
-<script>
-  let slideIndex = 1;
-  showSlides (slideIndex);
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
 
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
 
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
-  function showSlides(n) {
-    let i;
-    let slides = 
-    document.getElementsByClassName("mySlides");
-    let dots = 
-    document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++)
-    {
-      slides [i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = 
-      dots[i].className.replace("active","");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += "active";
-  }
-
-</script>
-</body>
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace("active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += "active";
+      }
+    </script>
+  </body>
 </html>
